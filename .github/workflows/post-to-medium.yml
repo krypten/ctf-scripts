@@ -44,7 +44,7 @@ jobs:
         uses: philips-software/post-to-medium-action@v0.4.1
         with:
           integration_token: "${{ secrets.MEDIUM_INTEGRATION_KEY }}"
-          file: ${{ steps.latest.outputs.output }}
+          file: "htb/machines/solidstate.md"
           content_format: "markdown"
           notify_followers: "false"
           tags: "htb,writeup,security,pentesting"
